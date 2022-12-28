@@ -28,7 +28,7 @@ while True:
 print('-=' * 30)
 print('cod ', end='')
 for i in atleta.keys():
-    print(f'{i<15}', end='')
+    print(f'{i:<15}', end='')
 print()
 print('-' * 40)
 for k, v in enumerate(clube):
@@ -44,7 +44,7 @@ while True:
     if busca >= len(clube):
         print(f'ERRO! Não existe jogador com código {busca}!')
     else:
-        print(f'-- LEVANTAMENTO  DO JOGADOR {clube[busca]}:')
+        print(f'-- LEVANTAMENTO  DO JOGADOR {clube[busca]["nome"]}:')
         for i, g in enumerate(clube[busca]['gols']):
             print(f'No {i+1}º jogo {atleta["nome"]} fez {g} gols.')
     print('-' * 40)
